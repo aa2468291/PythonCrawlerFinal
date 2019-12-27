@@ -1,6 +1,20 @@
 from bs4 import BeautifulSoup
 import requests
-import urllib.request as ur
+import re
+
+def cleanhtml(raw_html):
+  cleanr = re.compile('<.*?>')
+  cleantext = re.sub(cleanr, '', raw_html)
+  return cleantext
+
+def money(raw):
+
+  left = raw.rfind('$')
+  left2 =raw.find('$')
+  right = raw.rfind(' ')
+  cleantext = raw[left:right].replace('◆', '').replace('★', '').replace('熱賣', '').strip()
+  product = raw[:left2-2]
+  return product
 
 
 newlist = []
@@ -15,9 +29,13 @@ if r.status_code == requests.codes.ok:
 # 以BeautifulSoup 解析 HTML 程式碼
     soup = BeautifulSoup(r.text, 'html.parser')
 
+
     soup2 = str(soup.find_all('select')).split('\n')
+    filter = '★'
+# any(x in (str(i)) for x in a)
     for i in soup2:
-        print('********'+i)
+        if filter in i:
+            print('***'+money(cleanhtml(i)))
 
 
 
