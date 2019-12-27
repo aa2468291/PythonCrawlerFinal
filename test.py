@@ -7,18 +7,21 @@ def cleanhtml(raw_html):
   cleantext = re.sub(cleanr, '', raw_html)
   return cleantext
 
-def money(raw):
+def wash(raw):
 
   left = raw.rfind('$')
   left2 =raw.find('$')
   right = raw.rfind(' ')
-  cleantext = raw[left:right].replace('◆', '').replace('★', '').replace('熱賣', '').strip()
+  money = raw[left:right].replace('◆', '').replace('★', '').replace('熱賣', '').strip()
   product = raw[:left2-2]
+  coolpc[product] = money
+
+
   return product
 
 
 newlist = []
-newdict = {}
+coolpc = {}
 
 # 爬取網頁內容
 r = requests.get('http://www.coolpc.com.tw/evaluate.php')
@@ -35,13 +38,18 @@ if r.status_code == requests.codes.ok:
 # any(x in (str(i)) for x in a)
     for i in soup2:
         if filter in i:
-            print('***'+money(cleanhtml(i)))
+            wash(cleanhtml(i))
+            # print('***'+money(cleanhtml(i)))
+    for j in coolpc:
+        print(j,coolpc[j])
 
 
 
 
 
     # print(soup2)
+
+# print(coolpc)
 
 
 
