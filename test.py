@@ -22,6 +22,7 @@ def wash(raw):
 
 newlist = []
 coolpc = {}
+keyword = input('請輸入要查詢的關鍵字')
 
 # 爬取網頁內容
 r = requests.get('http://www.coolpc.com.tw/evaluate.php')
@@ -40,8 +41,11 @@ if r.status_code == requests.codes.ok:
         if filter in i:
             wash(cleanhtml(i))
             # print('***'+money(cleanhtml(i)))
+
+
     for j in coolpc:
-        print(j,coolpc[j])
+        if keyword in j:
+            print(j,coolpc[j])
 
 
 
