@@ -3,14 +3,14 @@ import time
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
-from seleniumrequests import Chrome
-# options = Options()
-# options.add_argument('-headless')
+from seleniumrequests import Firefox
+options = Options()
+options.add_argument('-headless')
 
-from selenium.webdriver.chrome.options import Options
-chrome_options = Options() # 啟動無頭模式
-chrome_options.add_argument('--headless')  #規避google bug
-chrome_options.add_argument('--disable-gpu')
+# from selenium.webdriver.chrome.options import Options
+# chrome_options = Options() # 啟動無頭模式
+# chrome_options.add_argument('--headless')  #規避google bug
+# chrome_options.add_argument('--disable-gpu')
 import requests
 import re
 tStart = time.time()#計時開始
@@ -23,16 +23,24 @@ tStart = time.time()#計時開始
 # # 以BeautifulSoup 解析 HTML 程式碼
 #     soup = BeautifulSoup(r.text, 'html.parser')
 
-webdriver = Chrome(options=chrome_options)
+webdriver = Firefox(options=options)
 # browser = webdriver.Chrome(options=chrome_options)
 # browser.get("https://www.sinya.com.tw/diy")
 
 response = webdriver.request('POST', 'https://www.sinya.com.tw/diy/show_option/', data={"prod_sub_slave_id": "148"})
-response = webdriver.request('POST', 'https://www.sinya.com.tw/diy/show_option/', data={"prod_sub_slave_id": "19"})
-response = webdriver.request('POST', 'https://www.sinya.com.tw/diy/show_option/', data={"prod_sub_slave_id": "7"})
+
 response.encoding = 'utf-8'
 print('OK')
-print(response.text)
+# print(response.text)
+
+soup = BeautifulSoup(response.text, 'html.parser')
+# print(soup)
+links = (soup.find_all('label', class_='showImg'))
+# print(links)
+# print(len(links))
+# print(links[184].get('title').strip())
+for link in links:
+    print(link.get('title').strip())
 # print(type(response))
 # print(response.encoding)
 # soup = BeautifulSoup(browser.page_source, "html.parser")
