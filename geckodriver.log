@@ -330,7 +330,8 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 1577470245182	Marionette	INFO	Listening on port 20183
 1577470245594	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
-1577470263775	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofileMKfRKl"
+Exiting due to channel error.
+	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofileMKfRKl"
 *** You are running in headless mode.
 1577470264137	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
 1577470264137	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
@@ -340,7 +341,8 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 1577470265374	Marionette	INFO	Listening on port 20246
 1577470265804	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
-1577470277427	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofilez0i01a"
+Exiting due to channel error.
+	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofilez0i01a"
 *** You are running in headless mode.
 1577470277793	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
 1577470277794	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
@@ -369,7 +371,8 @@ JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 1577470442195	Marionette	INFO	Listening on port 20618
 1577470442603	Marionette	WARN	TLS certificate errors will be ignored for this session
-1577470571965	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofileDqWvKm"
+Exiting due to channel error.
+	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofileDqWvKm"
 *** You are running in headless mode.
 1577470572317	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
 1577470572317	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
@@ -379,7 +382,8 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 1577470573558	Marionette	INFO	Listening on port 20853
 1577470573975	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
-1577470595511	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofileWQG3jq"
+Exiting due to channel error.
+	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofileWQG3jq"
 *** You are running in headless mode.
 1577470595865	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
 1577470595865	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
@@ -389,7 +393,8 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 1577470597135	Marionette	INFO	Listening on port 20918
 1577470597525	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
-1577470603671	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofileXmCVNa"
+Exiting due to channel error.
+	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofileXmCVNa"
 *** You are running in headless mode.
 1577470604107	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
 1577470604107	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
@@ -399,7 +404,8 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 1577470605338	Marionette	INFO	Listening on port 20968
 1577470605692	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
-1577470612651	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofileJocHSj"
+Exiting due to channel error.
+	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofileJocHSj"
 *** You are running in headless mode.
 1577470613009	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
 1577470613009	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
@@ -409,7 +415,10 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 1577470614257	Marionette	INFO	Listening on port 21019
 1577470614663	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
-1577470665900	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofileCEIiXG"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+refox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofileCEIiXG"
 *** You are running in headless mode.
 1577470666247	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
 1577470666247	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
@@ -419,7 +428,8 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 1577470667480	Marionette	INFO	Listening on port 21123
 1577470667911	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
-1577471099713	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofileCBA657"
+Exiting due to channel error.
+	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofileCBA657"
 *** You are running in headless mode.
 1577471100083	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
 1577471100083	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
@@ -429,3 +439,5 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 1577471101268	Marionette	INFO	Listening on port 21653
 1577471101733	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+Exiting due to channel error.
+Exiting due to channel error.
