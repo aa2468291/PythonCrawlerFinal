@@ -42,10 +42,12 @@ print('***********************')
 # print(len(links))
 # print(links[184].get('title').strip())
 for link in links:
-    price = link.find('label', class_='showImg').parent.parent.parent
-    newprice = price.find('input', class_='prod_price_val')
-    print(newprice)
-    break
+    title = link.find('label', class_='showImg')
+    print(title.get('title').strip())
+    price = title.parent.parent.parent.find('input', class_='prod_price_val')
+    print(price.get('value').strip())
+    print('==================================================')
+
 
 
 # print(type(response))
