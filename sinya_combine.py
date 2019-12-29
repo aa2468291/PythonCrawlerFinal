@@ -1,12 +1,12 @@
 from bs4 import BeautifulSoup
 import requests
 import time
-from seleniumrequests import Firefox
-from selenium.webdriver.firefox.options import Options
+# from seleniumrequests import Firefox
+# from selenium.webdriver.firefox.options import Options
 tStart = time.time()  # 計時開始
-options = Options()
-options.add_argument('-headless')  # FIREFOX 改成headless mode
-webdriver = Firefox(options=options)
+# options = Options()
+# options.add_argument('-headless')  # FIREFOX 改成headless mode
+# webdriver = Firefox(options=options)
 
 r = requests.get('https://www.sinya.com.tw/diy')
 r.encoding = 'utf-8'  # 設定編碼為UTF-8
@@ -26,11 +26,11 @@ if r.status_code == requests.codes.ok:
     print(pre_num)
 
     for checklist in pre_num:
-        response = webdriver.request('POST', 'https://www.sinya.com.tw/diy/show_option/',
-                                     data={"prod_sub_slave_id": checklist})
+        response = requests.post('https://www.sinya.com.tw/diy/show_option/', data={"prod_sub_slave_id": checklist})
         response.encoding = 'utf-8'
         soup2 = BeautifulSoup(response.text, 'lxml')
         items = (soup2.find_all('label', class_='showImg'))
+        prices = (soup2.find_all('input', class_='prod_price_val'))
         for item in items:
             print(item.get('title').strip())
             # products.append(item.get('title').strip())
@@ -38,8 +38,5 @@ if r.status_code == requests.codes.ok:
 
 tEnd = time.time()  # 計時結束
 # print(products)
-
-
-
 
 print("It cost %f sec" % (tEnd - tStart))  # 會自動做近位

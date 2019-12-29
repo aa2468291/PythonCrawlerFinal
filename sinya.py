@@ -34,12 +34,20 @@ print('OK')
 
 soup = BeautifulSoup(response.text, 'lxml')
 # print(soup)
-links = (soup.find_all('label', class_='showImg'))
-# print(links)
+# print(soup)
+links = (soup.find_all('div', class_='prodClick'))
+# print(len(links))
+print(links[0])
+print('***********************')
 # print(len(links))
 # print(links[184].get('title').strip())
 for link in links:
-    print(link.get('title').strip())
+    price = link.find('label', class_='showImg').parent.parent.parent
+    newprice = price.find('input', class_='prod_price_val')
+    print(newprice)
+    break
+
+
 # print(type(response))
 # print(response.encoding)
 # soup = BeautifulSoup(browser.page_source, "html.parser")

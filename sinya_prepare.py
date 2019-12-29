@@ -14,6 +14,7 @@ if r.status_code == requests.codes.ok:
 # 以BeautifulSoup 解析 HTML 程式碼
     soup = BeautifulSoup(r.text, 'html.parser')
 
+
 links = soup.find_all("div", class_="diy_class")
 for link in links:
     pre_num.append(link.get('data-id'))
