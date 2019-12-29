@@ -31,7 +31,7 @@ r = requests.get('http://www.coolpc.com.tw/evaluate.php')
 if r.status_code == requests.codes.ok:
 
 # 以BeautifulSoup 解析 HTML 程式碼
-    soup = BeautifulSoup(r.text, 'html.parser')
+    soup = BeautifulSoup(r.text, 'lxml')
 
 
     soup2 = str(soup.find_all('select')).split('\n')

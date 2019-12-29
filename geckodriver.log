@@ -441,3 +441,314 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
 Exiting due to channel error.
 Exiting due to channel error.
+1577552890393	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofileYLPxKB"
+*** You are running in headless mode.
+1577552891146	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1577552891146	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1577552891146	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1577552891146	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1577552892351	Marionette	INFO	Listening on port 30414
+1577552892417	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+Exiting due to channel error.
+Exiting due to channel error.
+gram Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofile4pHpGo"
+*** You are running in headless mode.
+1577552898081	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1577552898081	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1577552898081	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1577552898081	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1577552899267	Marionette	INFO	Listening on port 30456
+1577552899748	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+Exiting due to channel error.
+	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofile77I0Qa"
+*** You are running in headless mode.
+1577552906916	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1577552906917	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1577552906917	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1577552906917	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1577552908100	Marionette	INFO	Listening on port 30502
+1577552908576	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+Exiting due to channel error.
+Exiting due to channel error.
+gram Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofilegeg5Uo"
+*** You are running in headless mode.
+1577553181842	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1577553181842	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1577553181842	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1577553181842	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1577553183019	Marionette	INFO	Listening on port 30637
+1577553183521	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+refox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofileuIzE0q"
+*** You are running in headless mode.
+1577553197863	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1577553197864	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1577553197864	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1577553197864	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1577553199037	Marionette	INFO	Listening on port 30682
+1577553199520	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+Exiting due to channel error.
+Exiting due to channel error.
+1577554454408	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofile3dN7Sd"
+*** You are running in headless mode.
+1577554454796	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1577554454796	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1577554454796	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1577554454796	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1577554456049	Marionette	INFO	Listening on port 31286
+1577554456418	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+Exiting due to channel error.
+	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofilei1TOny"
+*** You are running in headless mode.
+1577554463642	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1577554463642	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1577554463642	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1577554463642	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1577554464862	Marionette	INFO	Listening on port 31333
+1577554465265	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+Exiting due to channel error.
+Exiting due to channel error.
+1577599386583	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofilevbW6qo"
+*** You are running in headless mode.
+1577599404837	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofilenYLbVK"
+*** You are running in headless mode.
+1577599405250	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1577599405250	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1577599405251	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1577599405251	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1577599406435	Marionette	INFO	Listening on port 32509
+1577599406856	Marionette	WARN	TLS certificate errors will be ignored for this session
+1577599414668	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofilezp53wR"
+*** You are running in headless mode.
+1577599415117	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1577599415117	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1577599415117	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1577599415117	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1577599416198	Marionette	INFO	Listening on port 32541
+1577599416688	Marionette	WARN	TLS certificate errors will be ignored for this session
+1577599450032	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofilekFuSq5"
+*** You are running in headless mode.
+1577599450366	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1577599450367	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1577599450367	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1577599450367	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1577599451515	Marionette	INFO	Listening on port 32578
+1577599451540	Marionette	WARN	TLS certificate errors will be ignored for this session
+1577599701974	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofileO6KXu7"
+*** You are running in headless mode.
+1577599702310	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1577599702310	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1577599702310	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1577599702310	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1577599703634	Marionette	INFO	Listening on port 32728
+1577599703983	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+1577599729470	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofile7ob4kU"
+*** You are running in headless mode.
+1577599729815	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1577599729815	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1577599729815	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1577599729815	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1577599730989	Marionette	INFO	Listening on port 32783
+1577599731479	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+1577599754790	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofileMj5Qfd"
+*** You are running in headless mode.
+1577599755170	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1577599755170	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1577599755170	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1577599755170	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1577599756330	Marionette	INFO	Listening on port 32833
+1577599756812	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+1577599866014	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofileTZ1MgE"
+*** You are running in headless mode.
+1577599866386	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1577599866387	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1577599866387	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1577599866387	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1577599867564	Marionette	INFO	Listening on port 32927
+1577599868027	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+1577600127525	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofile89huUM"
+*** You are running in headless mode.
+1577600127902	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1577600127902	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1577600127902	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1577600127902	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1577600129090	Marionette	INFO	Listening on port 33006
+1577600129566	Marionette	WARN	TLS certificate errors will be ignored for this session
+1577600991418	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofileim9qIp"
+*** You are running in headless mode.
+1577600991780	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1577600991780	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1577600991780	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1577600991781	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1577600992973	Marionette	INFO	Listening on port 33208
+1577600993432	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/, line 722: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/aos.js, line 1: NS_ERROR_UNEXPECTED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/, line 722: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/aos.js, line 1: NS_ERROR_UNEXPECTED: 
+JavaScript error: resource:///actors/SearchTelemetryChild.jsm, line 162: TypeError: this.content is null
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_UNEXPECTED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+1577601081412	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\AA2468~1\\AppData\\Local\\Temp\\rust_mozprofile04j0uf"
+*** You are running in headless mode.
+1577601081753	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1577601081753	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1577601081754	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1577601081754	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1577601082966	Marionette	INFO	Listening on port 33430
+1577601083425	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/, line 722: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/aos.js, line 1: NS_ERROR_UNEXPECTED: 
+JavaScript error: resource:///actors/SearchTelemetryChild.jsm, line 162: TypeError: this.content is null
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_UNEXPECTED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.sinya.com.tw/scripts/rwd/jquery-1.9.1.js, line 39: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_NOT_INITIALIZED: 

@@ -19,7 +19,7 @@ for link in links:
     pre_num.append(link.get('data-id'))
 
 print(pre_num)
-print(len(pre_num))
+
 
 
 

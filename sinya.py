@@ -28,12 +28,11 @@ webdriver = Firefox(options=options)
 # browser.get("https://www.sinya.com.tw/diy")
 
 response = webdriver.request('POST', 'https://www.sinya.com.tw/diy/show_option/', data={"prod_sub_slave_id": "148"})
-
 response.encoding = 'utf-8'
 print('OK')
 # print(response.text)
 
-soup = BeautifulSoup(response.text, 'html.parser')
+soup = BeautifulSoup(response.text, 'lxml')
 # print(soup)
 links = (soup.find_all('label', class_='showImg'))
 # print(links)
