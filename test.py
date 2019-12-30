@@ -1,28 +1,18 @@
 from bs4 import BeautifulSoup
 import requests
-import re
 
 
-def cleanhtml(raw_html):
-    cleanr = re.compile('<.*?>')
-    cleantext = re.sub(cleanr, '', raw_html)
-    return cleantext
-
-
-def wash(raw):
+def cleaning(raw):
     left = raw.rfind('$')
     left2 = raw.find('$')
     right = raw.rfind(' ')
     money = raw[left:right].replace('◆', '').replace('★', '').replace('熱賣', '').strip()
     product = raw[:left2 - 2]
     coolpc[product] = money
-
     return product
 
-
-
 coolpc = {}
-keyword = input('請輸入要查詢的關鍵字')
+keyword = input('請輸入要查詢的關鍵字').lower()
 
 # 爬取網頁內容
 r = requests.get('http://www.coolpc.com.tw/evaluate.php')
@@ -38,13 +28,14 @@ if r.status_code == requests.codes.ok:
     symbol = ['↪', '❤']
 
     for i in data:
-        if len(i.string)>2:
-            wash(i.string)
+        i = i.string
+        if len(i) >2:
+            cleaning(i)
 
 
     for j in coolpc:
-        if keyword in j and symbol[0] not in j and symbol[1] not in j:
-            print(j, coolpc[j])
+        if keyword.lower() in j.lower() and not any(x in symbol for x in j):
+            print(j, coolpc[j][1:])
 
     # print(soup2)
 
