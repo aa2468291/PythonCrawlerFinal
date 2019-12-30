@@ -35,18 +35,16 @@ if r.status_code == requests.codes.ok:
 
     data = (soup.find_all('option'))
     print(len(data))
-    symbol = '★'
+    symbol = ['↪', '❤']
 
     for i in data:
-        # if symbol in i.string:
-        print(i.string)
-        print('*******')
-            # wash(cleanhtml(i))
+        if len(i.string)>2:
+            wash(i.string)
 
 
-    # for j in coolpc:
-    #     if keyword in j:
-    #         print(j, coolpc[j])
+    for j in coolpc:
+        if keyword in j and symbol[0] not in j and symbol[1] not in j:
+            print(j, coolpc[j])
 
     # print(soup2)
 
