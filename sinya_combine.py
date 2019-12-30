@@ -1,12 +1,9 @@
 from bs4 import BeautifulSoup
 import requests
+
 import time
-# from seleniumrequests import Firefox
-# from selenium.webdriver.firefox.options import Options
 tStart = time.time()  # 計時開始
-# options = Options()
-# options.add_argument('-headless')  # FIREFOX 改成headless mode
-# webdriver = Firefox(options=options)
+
 
 r = requests.get('https://www.sinya.com.tw/diy')
 r.encoding = 'utf-8'  # 設定編碼為UTF-8
