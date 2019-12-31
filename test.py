@@ -11,6 +11,7 @@ def cleaning(raw):
     coolpc[product] = money
     return product
 
+
 coolpc = {}
 keyword = input('請輸入要查詢的關鍵字').lower()
 

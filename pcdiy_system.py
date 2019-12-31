@@ -92,3 +92,4 @@ while True:
     sinya_search(search)
     print('================結束，還有需要查詢的嗎？====================')
 
+
