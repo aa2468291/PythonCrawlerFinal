@@ -24,6 +24,8 @@ def cleaning(raw):
 
 def coolpc():
     print('原價屋資料撈取ing......')
+    message1_label.configure(text='原價屋資料撈取ing......')
+    window.update()
     r = requests.get('http://www.coolpc.com.tw/evaluate.php')  # 爬取網頁內容
     if r.status_code == requests.codes.ok:  # 確認網頁狀態
         soup = BeautifulSoup(r.text, 'lxml')  # 以BeautifulSoup 解析 HTML 程式碼,lxml速度較快
@@ -35,7 +37,10 @@ def coolpc():
             if len(i) > 2:
                 cleaning(i)
 
-    message1_label.configure(text='原價屋資料撈取完畢!!!')
+    message2_label.configure(text='原價屋資料撈取完畢!!!')
+    window.update()
+    coolpc_search()
+
     print('原價屋資料撈取完畢')
 
 
@@ -49,6 +54,8 @@ def sinya():
     if r.status_code == requests.codes.ok:  # 確認網頁狀態
 
         print('欣亞數位資料撈取ing , 約20秒')
+        message3_label.configure(text='欣亞數位資料撈取ing , 約20秒')
+        window.update()
 
 
         # 以BeautifulSoup 解析 HTML 程式碼
@@ -73,25 +80,25 @@ def sinya():
                 j = (price.get('value').strip())
                 sinyaData[i] = j
 
-        message2_label.configure(text=str(text)+',欣亞數位資料撈取完畢!!!')
+        message4_label.configure(text=str(text)+',欣亞數位資料撈取完畢!!!')
+        window.update()
         print('欣亞數位資料撈取完畢')
+        sinya_search()
 
 
 def coolpc_search():
     coolpc_listbox.delete(0, 'end')
-    keyword = keyword_entry.get()
+    keyword = keyword_entry.get().lower().split()
     symbol = ['↪', '❤']
     for j in coolpcData:
-        if keyword.lower() in j.lower() and not any(x in symbol for x in j):
-            # print(j)
-            # print(coolpcData[j][1:])
+        if all(x in j.lower() for x in keyword) and not any(x in j for x in symbol):
             coolpc_listbox.insert(END, str(j)+' '+str(coolpcData[j][1:]))
 
 def sinya_search():
     sinya_listbox.delete(0, 'end')
-    keyword = keyword_entry.get()
+    keyword = keyword_entry.get().lower().split()
     for k in sinyaData:
-        if keyword.lower() in k.lower():
+        if all(x in k.lower() for x in keyword):
             sinya_listbox.insert(END, str(k) + ' ' + str(sinyaData[k][1:]))
             # print(k, sinyaData[k])
 
@@ -152,6 +159,10 @@ message1_label = tk.Label(work_frame, text='')
 message1_label.pack()
 message2_label = tk.Label(work_frame, text='')
 message2_label.pack()
+message3_label = tk.Label(work_frame, text='')
+message3_label.pack()
+message4_label = tk.Label(work_frame, text='')
+message4_label.pack()
 
 get_btn = tk.Button(window, text='點我開撈',command=lambda:[coolpc(),sinya()])
 get_btn.pack()
