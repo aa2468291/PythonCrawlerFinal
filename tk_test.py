@@ -22,9 +22,11 @@ def cleaning(raw):
 
 
 def coolpc():
+    coolpc_listbox.delete(0, 'end')
     print('原價屋資料撈取ing......')
-    message1_label = tk.Label(work_frame, text='原價屋資料撈取ing......', font=("微軟正黑體", 12))
-    message1_label.pack()
+    # message1_label = tk.Label(work_frame, text='原價屋資料撈取ing......', font=("微軟正黑體", 12))
+    # message1_label.pack()
+    coolpc_listbox.insert(END, '原價屋資料撈取ing......')
 
     # message1_label.configure(text='原價屋資料撈取ing......')
     window.update()
@@ -40,8 +42,9 @@ def coolpc():
                 cleaning(i)
 
 
-    message2_label = tk.Label(work_frame, text='原價屋資料撈取完畢!!!', font=("微軟正黑體", 12))
-    message2_label.pack()
+    # message2_label = tk.Label(work_frame, text='原價屋資料撈取完畢!!!', font=("微軟正黑體", 12))
+    # message2_label.pack()
+    coolpc_listbox.insert(END, '原價屋資料撈取完畢!!!')
     window.update()
 
     coolpc_search()
@@ -50,6 +53,7 @@ def coolpc():
 
 
 def sinya():
+    sinya_listbox.delete(0, 'end')
     r = requests.get('https://www.sinya.com.tw/diy')
     r.encoding = 'utf-8'  # 設定編碼為UTF-8
     pre_num = []  # 預計要爬取的ID list
@@ -57,8 +61,9 @@ def sinya():
     if r.status_code == requests.codes.ok:  # 確認網頁狀態
 
         print('欣亞數位資料撈取ing , 約20秒')
-        message3_label = tk.Label(work_frame, text='欣亞數位資料撈取ing , 約20秒', font=("微軟正黑體", 12))
-        message3_label.pack()
+        # message3_label = tk.Label(work_frame, text='欣亞數位資料撈取ing , 約20秒', font=("微軟正黑體", 12))
+        # message3_label.pack()
+        sinya_listbox.insert(END, '欣亞數位資料撈取ing , 約20秒')
         window.update()
 
 
@@ -70,9 +75,9 @@ def sinya():
 
         text = '資料清單共' + str(len(pre_num)) + '個，再等我一下......'
         print(text)
-        message4_label = tk.Label(work_frame, text=text, font=("微軟正黑體", 12))
-
-        message4_label.pack()
+        # message4_label = tk.Label(work_frame, text=text, font=("微軟正黑體", 12))
+        # message4_label.pack()
+        sinya_listbox.insert(END, text)
         window.update()
 
 
@@ -90,8 +95,9 @@ def sinya():
                 sinyaData[i] = j
 
         # message1_label.configure(text=str(text)+',欣亞數位資料撈取完畢!!!')
-        message5_label = tk.Label(work_frame, text='欣亞數位資料撈取完畢', font=("微軟正黑體", 12))
-        message5_label.pack()
+        # message5_label = tk.Label(work_frame, text='欣亞數位資料撈取完畢', font=("微軟正黑體", 12))
+        # message5_label.pack()
+        sinya_listbox.insert(END, '欣亞數位資料撈取完畢')
         window.update()
         print('欣亞數位資料撈取完畢')
         sinya_search()
@@ -151,7 +157,7 @@ coolpc_title_label.pack()
 coolpc_scrollbar = Scrollbar(coolpc_list_frame)
 coolpc_scrollbar.pack(side='right', fill='y')
 
-coolpc_listbox = Listbox(coolpc_list_frame, width=80, height=20)
+coolpc_listbox = Listbox(coolpc_list_frame, width=80, height=35)
 coolpc_listbox.pack(fill='y')
 
 # for i in range(100):
@@ -169,7 +175,7 @@ sinya_title_label.pack()
 sinya_scrollbar = Scrollbar(sinya_list_frame)
 sinya_scrollbar.pack(side='right', fill='y')
 
-sinya_listbox = Listbox(sinya_list_frame, width=150, height=20)
+sinya_listbox = Listbox(sinya_list_frame, width=150, height=35)
 sinya_listbox.pack(fill='y')
 
 # for i in range(150):
@@ -181,7 +187,7 @@ sinya_scrollbar.config(command=sinya_listbox.yview)
 
 work_frame = tk.Frame(window)
 work_frame.pack()
-work_label = tk.Label(work_frame, text='=========系統訊息==========', font=("微軟正黑體", 24))
+work_label = tk.Label(work_frame, text='=====================================================================', font=("微軟正黑體", 24))
 work_label.pack()
 
 # message2_label = tk.Label(work_frame, text='')
