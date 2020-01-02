@@ -83,6 +83,9 @@ def sinya():
 
         for checklist in pre_num:
             response = requests.post('https://www.sinya.com.tw/diy/show_option/', data={"prod_sub_slave_id": checklist})
+            checkid = 'ID:' + checklist + '=>GET !'
+            sinya_listbox.insert(END, checkid)
+            window.update()
             response.encoding = 'utf-8'
             soup2 = BeautifulSoup(response.text, 'lxml')
 
@@ -93,6 +96,9 @@ def sinya():
                 price = title.parent.parent.parent.find('input', class_='prod_price_val')
                 j = (price.get('value').strip())
                 sinyaData[i] = j
+
+
+
 
         # message1_label.configure(text=str(text)+',欣亞數位資料撈取完畢!!!')
         # message5_label = tk.Label(work_frame, text='欣亞數位資料撈取完畢', font=("微軟正黑體", 12))
