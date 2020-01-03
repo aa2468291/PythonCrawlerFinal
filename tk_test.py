@@ -2,6 +2,7 @@ from tkinter import *
 import tkinter as tk
 from bs4 import BeautifulSoup
 import requests
+from collections import OrderedDict
 
 window = tk.Tk()
 window.title('PCDIY爬蟲比價系統')
@@ -10,25 +11,45 @@ window.configure()
 
 coolpcData = {}
 sinyaData = {}
+coolpcData_sorted = {}
+sinyaData_sorted = {}
 
+def is_integer(n):
+    try:
+        float(n)
+    except ValueError:
+        return False
+    else:
+        return float(n).is_integer()
 
 def cleaning(raw):
     left = raw.rfind('$')
     left2 = raw.find('$')
     right = raw.rfind(' ')
+
+    if right < left:  # 避免沒撈到空格，造成left 反而比right大
+        right = 100
+
     money = raw[left:right].replace('◆', '').replace('★', '').replace('熱賣', '').strip()[1:]
     product = raw[:left2 - 2]
-    coolpcData[product] = money
+
+
+    if is_integer(money) and  '↪' not in product and '❤' not in product and '共有商品' not in product:
+        coolpcData[product] = int(money)
+    # 排除非商品的部分，確保所有money都是數字價錢的金額
+
+
+
+
+
 
 
 def coolpc():
+    global coolpcData_sorted
     coolpc_listbox.delete(0, 'end')
     print('原價屋資料撈取ing......')
-    # message1_label = tk.Label(work_frame, text='原價屋資料撈取ing......', font=("微軟正黑體", 12))
-    # message1_label.pack()
     coolpc_listbox.insert(END, '原價屋資料撈取ing......')
 
-    # message1_label.configure(text='原價屋資料撈取ing......')
     window.update()
     r = requests.get('http://www.coolpc.com.tw/evaluate.php')  # 爬取網頁內容
     if r.status_code == requests.codes.ok:  # 確認網頁狀態
@@ -41,18 +62,18 @@ def coolpc():
             if len(i) > 2:
                 cleaning(i)
 
+    coolpcData_sorted = OrderedDict(sorted(coolpcData.items(), key=lambda x: x[1]))
 
-    # message2_label = tk.Label(work_frame, text='原價屋資料撈取完畢!!!', font=("微軟正黑體", 12))
-    # message2_label.pack()
+
     coolpc_listbox.insert(END, '原價屋資料撈取完畢!!!')
     window.update()
-
     coolpc_search()
 
     print('原價屋資料撈取完畢')
 
 
 def sinya():
+    global sinyaData_sorted
     sinya_listbox.delete(0, 'end')
     r = requests.get('https://www.sinya.com.tw/diy')
     r.encoding = 'utf-8'  # 設定編碼為UTF-8
@@ -61,8 +82,7 @@ def sinya():
     if r.status_code == requests.codes.ok:  # 確認網頁狀態
 
         print('欣亞數位資料撈取ing , 約20秒')
-        # message3_label = tk.Label(work_frame, text='欣亞數位資料撈取ing , 約20秒', font=("微軟正黑體", 12))
-        # message3_label.pack()
+
         sinya_listbox.insert(END, '欣亞數位資料撈取ing , 約20秒')
         window.update()
 
@@ -75,8 +95,7 @@ def sinya():
 
         text = '資料清單共' + str(len(pre_num)) + '個，再等我一下......'
         print(text)
-        # message4_label = tk.Label(work_frame, text=text, font=("微軟正黑體", 12))
-        # message4_label.pack()
+
         sinya_listbox.insert(END, text)
         window.update()
 
@@ -95,14 +114,15 @@ def sinya():
                 i = (title.get('title').strip())
                 price = title.parent.parent.parent.find('input', class_='prod_price_val')
                 j = (price.get('value').strip())
-                sinyaData[i] = j
+                sinyaData[i] = int(j)
+
+        sinyaData_sorted = OrderedDict(sorted(sinyaData.items(), key=lambda x: x[1]))
 
 
 
 
         # message1_label.configure(text=str(text)+',欣亞數位資料撈取完畢!!!')
-        # message5_label = tk.Label(work_frame, text='欣亞數位資料撈取完畢', font=("微軟正黑體", 12))
-        # message5_label.pack()
+
         sinya_listbox.insert(END, '欣亞數位資料撈取完畢')
         window.update()
         print('欣亞數位資料撈取完畢')
@@ -110,20 +130,26 @@ def sinya():
 
 
 def coolpc_search():
+    global coolpcData_sorted
+
+
+
     coolpc_listbox.delete(0, 'end')
     keyword = keyword_entry.get().lower().split()
-    symbol = ['↪', '❤', '共有商品']
-    for j in coolpcData:
-        if all(x in j.lower() for x in keyword) and not any(x in j for x in symbol):
-            coolpc_listbox.insert(END, '$ '+str(coolpcData[j])+'  ///  '+str(j))
+    # symbol = ['↪', '❤', '共有商品']
+    # and not any(x in j for x in symbol)
+    for j in coolpcData_sorted:
+        if all(x in j.lower() for x in keyword):
+            coolpc_listbox.insert(END, '$ '+str(coolpcData_sorted[j])+'  ///  '+str(j))
 
 
 def sinya_search():
+    global sinyaData_sorted
     sinya_listbox.delete(0, 'end')
     keyword = keyword_entry.get().lower().split()
-    for k in sinyaData:
+    for k in sinyaData_sorted:
         if all(x in k.lower() for x in keyword):
-            sinya_listbox.insert(END, '$ '+str(sinyaData[k])+'  ///  '+str(k))
+            sinya_listbox.insert(END, '$ '+str(sinyaData_sorted[k])+'  ///  '+str(k))
 
 
 def search_all(event=None):
