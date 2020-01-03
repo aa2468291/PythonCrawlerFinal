@@ -182,7 +182,7 @@ list_frame.pack(side='top')
 coolpc_list_frame = tk.Frame(list_frame)
 coolpc_list_frame.pack(side='left', fill='y')
 
-coolpc_title_label = tk.Label(coolpc_list_frame, text='原價屋', font=("微軟正黑體", 16), fg='blue')
+coolpc_title_label = tk.Label(coolpc_list_frame, text='Coolpc原價屋', font=("微軟正黑體", 16), fg='blue')
 coolpc_title_label.pack()
 
 
@@ -201,7 +201,7 @@ coolpc_scrollbar.config(command=coolpc_listbox.yview)
 sinya_list_frame = tk.Frame(list_frame)
 sinya_list_frame.pack(side='right', fill='y')
 
-sinya_title_label = tk.Label(sinya_list_frame, text='欣亞數位', font=("微軟正黑體", 16), fg='green')
+sinya_title_label = tk.Label(sinya_list_frame, text='Sinya欣亞數位', font=("微軟正黑體", 16), fg='green')
 sinya_title_label.pack()
 
 sinya_scrollbar = Scrollbar(sinya_list_frame)
