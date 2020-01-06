@@ -1,18 +1,21 @@
-from tkinter import *
 import tkinter as tk
-from bs4 import BeautifulSoup
+from tkinter import *
+from PIL import ImageTk, Image
 import requests
-from collections import OrderedDict
+from bs4 import BeautifulSoup
 
 window = tk.Tk()
-window.title('PCDIY爬蟲比價系統')
+window.title('PCDIY爬蟲比價系統 BY ADT105107 數位四甲 胡閔凱')
 window.geometry('1920x1080')
 window.configure()
 
-coolpcData = {}
-sinyaData = {}
-coolpcData_sorted = {}
-sinyaData_sorted = {}
+
+sinyaData_list = []
+sinyaData_sorted_list = []
+sinyaData_url = []  # 圖片URL
+coolpcData_list = []
+coolpcData_sorted_list = []
+control = False
 
 def is_integer(n):
     try:
@@ -35,17 +38,32 @@ def cleaning(raw):
 
 
     if is_integer(money) and  '↪' not in product and '❤' not in product and '共有商品' not in product:
-        coolpcData[product] = int(money)
+
+        dict = {
+            "name": product,
+            "price": int(money),
+        }
+
+        coolpcData_list.append(dict)
+        # coolpcData[product] = int(money)
     # 排除非商品的部分，確保所有money都是數字價錢的金額
 
 
-
-
-
+def buttonHandler(eff=None, control = False):
+    if control is True:
+        image_url = 'https://www.sinya.com.tw' + str(sinyaData_url[int(sinya_listbox.curselection()[0])])
+        pre_img = Image.open(requests.get(image_url, stream=True).raw)
+        img = ImageTk.PhotoImage(pre_img.resize((300, 300), Image.ANTIALIAS))
+        panel.configure(image=img)
+        panel.image = img
+        print('GET:'+image_url)
+    else:
+        print('Not Ready')
 
 
 def coolpc():
-    global coolpcData_sorted
+    global coolpcData_sorted_list
+    coolpcData_list.clear()
     coolpc_listbox.delete(0, 'end')
     print('原價屋資料撈取ing......')
     coolpc_listbox.insert(END, '原價屋資料撈取ing......')
@@ -62,7 +80,8 @@ def coolpc():
             if len(i) > 2:
                 cleaning(i)
 
-    coolpcData_sorted = OrderedDict(sorted(coolpcData.items(), key=lambda x: x[1]))
+    coolpcData_sorted_list = (sorted(coolpcData_list, key=lambda p: p['price']))
+    # coolpcData_sorted = OrderedDict(sorted(coolpcData.items(), key=lambda x: x[1]))
 
 
     coolpc_listbox.insert(END, '原價屋資料撈取完畢!!!')
@@ -73,14 +92,17 @@ def coolpc():
 
 
 def sinya():
-    global sinyaData_sorted
+    global sinyaData_list
+    global sinyaData_sorted_list
+    global control
+    control = False
     sinya_listbox.delete(0, 'end')
     r = requests.get('https://www.sinya.com.tw/diy')
     r.encoding = 'utf-8'  # 設定編碼為UTF-8
     pre_num = []  # 預計要爬取的ID list
 
     if r.status_code == requests.codes.ok:  # 確認網頁狀態
-
+        sinyaData_list.clear()
         print('欣亞數位資料撈取ing , 約20秒')
 
         sinya_listbox.insert(END, '欣亞數位資料撈取ing , 約20秒')
@@ -108,15 +130,33 @@ def sinya():
             response.encoding = 'utf-8'
             soup2 = BeautifulSoup(response.text, 'lxml')
 
+
+
             items = (soup2.find_all('div', class_='prodClick'))
             for item in items:
+
                 title = item.find('label', class_='showImg')
                 i = (title.get('title').strip())
+                img_url = title.get('rel').strip()
                 price = title.parent.parent.parent.find('input', class_='prod_price_val')
                 j = (price.get('value').strip())
-                sinyaData[i] = int(j)
+                # sinyaData[i] = int(j)
 
-        sinyaData_sorted = OrderedDict(sorted(sinyaData.items(), key=lambda x: x[1]))
+                dict = {
+                    "name": i,
+                    "price": int(j),
+                    "img_url": img_url
+                }
+
+                sinyaData_list.append(dict)
+
+
+
+        # sinyaData_sorted = OrderedDict(sorted(sinyaData.items(), key=lambda x: x[1]))
+        sinyaData_sorted_list = (sorted(sinyaData_list, key=lambda y: y['price']))
+
+
+
 
 
 
@@ -125,38 +165,52 @@ def sinya():
 
         sinya_listbox.insert(END, '欣亞數位資料撈取完畢')
         window.update()
+        control = True
         print('欣亞數位資料撈取完畢')
         sinya_search()
 
 
 def coolpc_search():
     global coolpcData_sorted
-
-
-
     coolpc_listbox.delete(0, 'end')
     keyword = keyword_entry.get().lower().split()
     # symbol = ['↪', '❤', '共有商品']
     # and not any(x in j for x in symbol)
-    for j in coolpcData_sorted:
-        if all(x in j.lower() for x in keyword):
-            coolpc_listbox.insert(END, '$ '+str(coolpcData_sorted[j])+'  ///  '+str(j))
+    # for j in coolpcData_sorted:
+    #     if all(x in j.lower() for x in keyword):
+    #         coolpc_listbox.insert(END, '$ '+str(coolpcData_sorted[j])+'  ///  '+str(j))
+
+    for j in coolpcData_sorted_list:
+        if all(x in j['name'].lower() for x in keyword):
+            coolpc_listbox.insert(END, '$ '+str(j['price'])+'  ///  '+str(j['name']))
+
+    window.update()
 
 
 def sinya_search():
-    global sinyaData_sorted
     sinya_listbox.delete(0, 'end')
     keyword = keyword_entry.get().lower().split()
-    for k in sinyaData_sorted:
-        if all(x in k.lower() for x in keyword):
-            sinya_listbox.insert(END, '$ '+str(sinyaData_sorted[k])+'  ///  '+str(k))
+
+    sinyaData_url.clear()
+
+
+    for d in sinyaData_sorted_list:
+        if all(x in d['name'].lower() for x in keyword):
+            sinyaData_url.append(str(d['img_url']))
+            sinya_listbox.insert(END, '$ ' + str(d['price']) + '  ///  ' + str(d['name']))
+
+    window.update()
+
+
+
+    # for k in sinyaData_sorted:
+    #     if all(x in k.lower() for x in keyword):
+    #         sinya_listbox.insert(END, '$ '+str(sinyaData_sorted[k])+'  ///  '+str(k))
 
 
 def search_all(event=None):
     coolpc_search()
-    window.update()
     sinya_search()
-    window.update()
 
 
 header_label = tk.Label(window, text='PCDIY爬蟲比價系統', font=("Helvetica", 32))
@@ -164,7 +218,7 @@ header_label.pack()
 
 keyword_frame = tk.Frame(window)
 keyword_frame.pack(side='top')
-keyword_label = tk.Label(keyword_frame, text='請輸入要搜尋的商品，可以用空格多關鍵字搜尋', font=("微軟正黑體", 12))
+keyword_label = tk.Label(keyword_frame, text='請輸入要搜尋的商品，可以用空格多關鍵字搜尋(例如：華碩 i7 2070)', font=("微軟正黑體", 12))
 keyword_label.pack()
 
 keyword_entry = tk.Entry(keyword_frame, width='40', font=("微軟正黑體", 16))
@@ -173,6 +227,7 @@ submit_btn = tk.Button(keyword_frame, text='送出搜尋', command=lambda: [cool
 submit_btn.pack(side='left')
 
 keyword_entry.bind("<Return>", search_all)
+
 
 
 list_frame = tk.Frame(window)
@@ -199,7 +254,7 @@ coolpc_listbox.pack(fill='y')
 coolpc_listbox.config(yscrollcommand=coolpc_scrollbar.set)
 coolpc_scrollbar.config(command=coolpc_listbox.yview)
 sinya_list_frame = tk.Frame(list_frame)
-sinya_list_frame.pack(side='right', fill='y')
+sinya_list_frame.pack(side='left', fill='y')
 
 sinya_title_label = tk.Label(sinya_list_frame, text='Sinya欣亞數位', font=("微軟正黑體", 16), fg='green')
 sinya_title_label.pack()
@@ -207,7 +262,8 @@ sinya_title_label.pack()
 sinya_scrollbar = Scrollbar(sinya_list_frame)
 sinya_scrollbar.pack(side='right', fill='y')
 
-sinya_listbox = Listbox(sinya_list_frame, width=150, height=35)
+sinya_listbox = Listbox(sinya_list_frame, width=120, height=35)
+sinya_listbox.bind('<<ListboxSelect>>', lambda eff: buttonHandler(eff, control=control))
 sinya_listbox.pack(fill='y')
 
 # for i in range(150):
@@ -231,6 +287,14 @@ work_label.pack()
 
 get_btn = tk.Button(window, text='點我開始爬網站資料', command=lambda: [coolpc(), sinya()], font=("微軟正黑體", 14), relief='solid', fg='red')
 get_btn.pack()
+
+image_url = 'https://www.sinya.com.tw/upload/prod/Build.jpg'
+pre_img = Image.open(requests.get(image_url, stream=True).raw)
+img = ImageTk.PhotoImage(pre_img.resize((300, 300), Image.ANTIALIAS))
+
+panel = Label(list_frame, image=img)
+panel.pack(side='right')
+
 window.mainloop()
 
 
