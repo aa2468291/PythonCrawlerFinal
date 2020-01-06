@@ -9,7 +9,7 @@ window.title('PCDIY爬蟲比價系統 BY ADT105107 數位四甲 胡閔凱')
 window.geometry('1920x1080')
 window.configure()
 
-
+headers = {'user-agent': 'Mozilla/5.0'}
 sinyaData_list = []
 sinyaData_sorted_list = []
 sinyaData_url = []  # 圖片URL
@@ -69,7 +69,7 @@ def coolpc():
     coolpc_listbox.insert(END, '原價屋資料撈取ing......')
 
     window.update()
-    r = requests.get('http://www.coolpc.com.tw/evaluate.php')  # 爬取網頁內容
+    r = requests.get('https://www.coolpc.com.tw/evaluate.php')  # 爬取網頁內容
     if r.status_code == requests.codes.ok:  # 確認網頁狀態
         soup = BeautifulSoup(r.text, 'lxml')  # 以BeautifulSoup 解析 HTML 程式碼,lxml速度較快
         data = (soup.find_all('option'))
@@ -97,7 +97,7 @@ def sinya():
     global control
     control = False
     sinya_listbox.delete(0, 'end')
-    r = requests.get('https://www.sinya.com.tw/diy')
+    r = requests.get('https://www.sinya.com.tw/diy', headers=headers)
     r.encoding = 'utf-8'  # 設定編碼為UTF-8
     pre_num = []  # 預計要爬取的ID list
 
@@ -123,12 +123,13 @@ def sinya():
 
 
         for checklist in pre_num:
-            response = requests.post('https://www.sinya.com.tw/diy/show_option/', data={"prod_sub_slave_id": checklist})
+            response = requests.post('https://www.sinya.com.tw/diy/show_option/', data={"prod_sub_slave_id": checklist}, headers=headers)
             checkid = 'ID:' + checklist + '=>GET !'
             sinya_listbox.insert(END, checkid)
             window.update()
             response.encoding = 'utf-8'
             soup2 = BeautifulSoup(response.text, 'lxml')
+
 
 
 
