@@ -129,11 +129,8 @@ def sinya():
             window.update()
             response.encoding = 'utf-8'
             soup2 = BeautifulSoup(response.text, 'lxml')
-
-
-
-
             items = (soup2.find_all('div', class_='prodClick'))
+
             for item in items:
 
                 title = item.find('label', class_='showImg')
@@ -155,11 +152,6 @@ def sinya():
 
         # sinyaData_sorted = OrderedDict(sorted(sinyaData.items(), key=lambda x: x[1]))
         sinyaData_sorted_list = (sorted(sinyaData_list, key=lambda y: y['price']))
-
-
-
-
-
 
 
         # message1_label.configure(text=str(text)+',欣亞數位資料撈取完畢!!!')
