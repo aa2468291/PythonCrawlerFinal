@@ -5,7 +5,7 @@ import requests
 from bs4 import BeautifulSoup
 
 window = tk.Tk()
-window.title('PCDIY爬蟲比價系統 BY ADT105107 數位四甲 胡閔凱')
+window.title('PCDIY爬蟲比價系統_此為python作業，資料歸原價屋、欣亞數位所有，若有不妥，請站內信告知，謝謝!')
 window.geometry('1920x1080')
 window.configure()
 
